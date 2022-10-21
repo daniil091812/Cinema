@@ -3,6 +3,7 @@ import Layout from "../Components/Layout/Layout";
 import Serials from "../Components/SerialsComponent/Serials";
 import Films from "../Components/FilmsComponent/Films";
 import Multfilms from "../Components/MultfilmsComponents/Multfilms";
+import FilmCard from "../Components/FilmCard/FilmCard";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Route path="multfilms" element={<Multfilms/>}/>
   </Route>
 </Routes>
+      <FilmCard/>
     </div>
   );
 }
