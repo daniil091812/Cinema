@@ -8,9 +8,7 @@ export function LoadedAction() {
     return (dispatch) => {
         dispatch({type: LOADING_START});
 
-
-
-            axios('https://jsonplaceholder.typicode.com/posts')
+            axios('https://api.themoviedb.org/3/movie/550?api_key=9128c4dd7d23379588394eca39a7d413')
                 .then(res => {
                     dispatch({
                         type: LOADING_END,
